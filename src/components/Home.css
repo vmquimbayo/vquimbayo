@@ -2,7 +2,7 @@
 .home-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ocupa toda la pantalla */
+    min-height: 90vh; /* Ocupa toda la pantalla */
     background-color: #000; /* Fondo negro uniforme */
     color: white; /* Texto blanco */
 }
@@ -14,13 +14,12 @@
     flex-direction: column;
     justify-content: center; /* Centra verticalmente */
     align-items: center; /* Centra horizontalmente */
-    padding: 2rem;
 }
 
 /* Encabezado */
 .home-header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .contact-button {
@@ -43,7 +42,7 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .home-stats div {
@@ -51,11 +50,18 @@
 }
 
 .home-stats h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
 }
 
 .home-stats p {
     font-size: 1rem;
     margin: 0.5rem 0 0;
+}
+
+
+.imgURL  {
+    width: 90px;
+    border-radius: 45px;
+    margin-top: 70px;
 }

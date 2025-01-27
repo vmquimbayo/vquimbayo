@@ -1,11 +1,13 @@
 import React from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
+import profile from './profile.jpg';
 
 const Home = () => {
     return (
         <div className="home-container">
             <div className="home-content">
+                <img className='imgURL' src={profile}></img>
                 <header className="home-header">
                     <h1>Hey there,</h1>
                     <h2>I'm Victor Quimbayo</h2>

@@ -1,6 +1,6 @@
 /* Footer */
 .footer {
-    height: 100px; /* Altura fija del footer */
+    height: 80px; /* Altura fija del footer */
     background-color: #111; /* Fondo oscuro */
     color: #ccc; /* Texto gris claro */
     text-align: center;
