@@ -1,0 +1,111 @@
+/* Contenedor principal */
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    background-color: #000;
+}
+
+/* Títulos */
+.contact-form-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form-container p {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 2rem;
+}
+
+/* Formulario */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Filas */
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Grupos */
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.8rem;
+    background-color: transparent;
+    border: 1px solid #555;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    resize: none; /* Evita el redimensionado en el textarea */
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #666;
+}
+
+/* Botón de enviar */
+.contact-button {
+    background-color: red;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: darkred;
+}
+
+/* Enlaces sociales */
+.contact-social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-social-links a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-social-links a:hover {
+    color: red;
+}
+/* Mensaje de éxito */
+.success-message {
+    color: #4caf50;
+    margin-bottom: 1rem;
+}
+
+/* Mensaje de error */
+.error-message {
+    color: #f44336;
+    margin-bottom: 1rem;
+}

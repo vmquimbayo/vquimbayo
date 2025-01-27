@@ -1,0 +1,61 @@
+/* Contenedor principal */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa toda la pantalla */
+    background-color: #000; /* Fondo negro uniforme */
+    color: white; /* Texto blanco */
+}
+
+/* Contenido principal */
+.home-content {
+    flex: 1; /* Ocupa el espacio restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    padding: 2rem;
+}
+
+/* Encabezado */
+.home-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-button {
+    background-color: red;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: darkred;
+}
+
+/* Estadísticas */
+.home-stats {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.home-stats div {
+    text-align: center;
+}
+
+.home-stats h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.home-stats p {
+    font-size: 1rem;
+    margin: 0.5rem 0 0;
+}

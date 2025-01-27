@@ -1,0 +1,53 @@
+/* sobre-mi.css */
+
+/* Variables de colores */
+:root {
+    --background-color: #000; /* Negro */
+    --text-color: #fff;       /* Blanco */
+    --accent-color: #ff073a;  /* Rojo llamativo */
+}
+
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Títulos */
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--accent-color);
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+/* Descripción */
+.description {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    color: var(--text-color);
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    box-shadow: 0 9px 8 rgba(255, 7, 58, 0.2);
+}
+
+/* Enlaces y elementos interactivos (si es necesario en el futuro) */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+

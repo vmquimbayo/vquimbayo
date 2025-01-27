@@ -1,0 +1,190 @@
+
+# Proyecto Portafolio
+
+Un proyecto de portafolio completo desarrollado con React, Node.js y Supabase. Esta aplicación está diseñada para mostrar proyectos, permitir a los visitantes contactar al desarrollador y proporcionar una interfaz visualmente atractiva y adaptable.
+
+## **Características**
+- Visualización de proyectos en una cuadrícula receptiva de 3 columnas.
+- Imagen predeterminada para proyectos que no tengan una asignada.
+- Formulario de contacto con validación y envío de datos a Supabase.
+- API de backend para gestionar proyectos y contactos.
+- Diseño adaptable para pantallas de escritorio y móviles.
+
+---
+
+## **Primeros Pasos**
+
+### **Requisitos Previos**
+Asegúrate de tener instalados en tu sistema:
+- [Node.js](https://nodejs.org/) (v16+)
+- npm (incluido con Node.js)
+- Una cuenta y un proyecto en Supabase
+
+### **Instalación**
+
+1. Clona el repositorio:
+   ```bash
+   git clone <url-del-repositorio>
+   cd portfolio-project
+   ```
+
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+
+3. Crea un archivo `.env` en el directorio raíz y agrega tus credenciales de Supabase:
+   ```env
+   SUPABASE_URL=tu-url-de-supabase
+   SUPABASE_KEY=tu-clave-api-de-supabase
+   ```
+
+4. Asegúrate de tener la estructura de tablas en Supabase según lo descrito en la sección [Esquema de Base de Datos](#esquema-de-base-de-datos).
+
+---
+
+## **Ejecución de la Aplicación**
+
+### **Para Desarrollo**
+
+Ejecuta el frontend y el backend juntos:
+```bash
+npm run dev
+```
+- Esto:
+  - Inicia el servidor de desarrollo de React (Frontend).
+  - Inicia el servidor Node.js (Backend).
+
+### **Para Producción**
+
+1. Construye la aplicación de React:
+   ```bash
+   npm run build
+   ```
+
+2. Inicia el servidor de Node.js:
+   ```bash
+   npm start
+   ```
+
+La aplicación estará disponible en `http://localhost:3000`.
+
+---
+
+## **Rutas de la API**
+
+El backend proporciona las siguientes rutas:
+
+### **Proyectos**
+- **`GET /api/projects`**: Obtiene todos los proyectos.
+- **`GET /api/projects/:id`**: Obtiene un proyecto por su ID.
+- **`POST /api/projects`**: Crea un nuevo proyecto.
+  - **Body**:
+    ```json
+    {
+      "title": "Título del Proyecto",
+      "description": "Descripción del Proyecto",
+      "image": "https://ejemplo.com/imagen.jpg"
+    }
+    ```
+- **`PUT /api/projects/:id`**: Actualiza un proyecto por ID.
+  - **Body**:
+    ```json
+    {
+      "title": "Título Actualizado",
+      "description": "Descripción Actualizada"
+    }
+    ```
+- **`DELETE /api/projects/:id`**: Elimina un proyecto por ID.
+
+### **Contactos**
+- **`POST /api/contact`**: Envía un mensaje de contacto.
+  - **Body**:
+    ```json
+    {
+      "full_name": "Juan Pérez",
+      "email": "juan.perez@ejemplo.com",
+      "phone_number": "123-456-7890",
+      "subject": "Consulta",
+      "message": "¡Hola, tengo una pregunta!"
+    }
+    ```
+
+---
+
+## **Características del Frontend**
+
+### **Página de Inicio**
+- Sección principal con un botón "Get in Touch" que redirige al formulario de contacto.
+
+### **Página de Proyectos**
+- Muestra una cuadrícula de proyectos.
+- Muestra una imagen predeterminada si no hay una imagen asignada al proyecto.
+
+### **Página de Contacto**
+- Un formulario completamente funcional.
+- Envía datos al backend mediante el endpoint `/api/contact`.
+- Muestra mensajes de éxito o error según la respuesta.
+
+---
+
+## **Esquema de Base de Datos**
+
+### **Tabla de Proyectos**
+| Columna      | Tipo    | Restricciones    |
+|--------------|---------|------------------|
+| `id`         | SERIAL  | PRIMARY KEY      |
+| `title`      | TEXT    | NOT NULL         |
+| `description`| TEXT    | NOT NULL         |
+| `imageUrl`      | TEXT    | DEFAULT NULL     |
+
+### **Tabla de Contactos**
+| Columna       | Tipo        | Restricciones    |
+|---------------|-------------|------------------|
+| `id`          | SERIAL      | PRIMARY KEY      |
+| `full_name`   | TEXT        | NOT NULL         |
+| `email`       | TEXT        | NOT NULL         |
+| `phone_number`| TEXT        | DEFAULT NULL     |
+| `subject`     | TEXT        | DEFAULT NULL     |
+| `message`     | TEXT        | NOT NULL         |
+| `created_at`  | TIMESTAMP   | DEFAULT NOW()    |
+
+---
+
+## **Estructura de Carpetas**
+
+```
+portfolio-project/
+├── build/              # Build de producción (creado tras `npm run build`)
+├── public/             # Recursos públicos
+├── src/
+│   ├── components/     # Componentes de React (Home, Projects, ContactForm)
+│   ├── dao/            # Data Access Objects (ProjectsDAO, ContactsDAO)
+│   ├── config/         # Configuración de Supabase
+│   ├── styles/         # Archivos CSS
+│   └── App.js          # Componente principal de React
+├── .env                # Variables de entorno
+├── server.js           # Servidor de Express
+├── package.json        # Dependencias del proyecto
+└── README.md           # Documentación del proyecto
+```
+
+---
+
+## **Demostración**
+
+### **Capturas de Pantalla**
+- **Página de Inicio**: Una sección principal con navegación al formulario de contacto.
+- **Página de Proyectos**: Una cuadrícula receptiva de 3 columnas.
+- **Página de Contacto**: Un formulario para enviar mensajes.
+
+---
+
+## **Licencia**
+
+Este proyecto está bajo la Licencia MIT.
+
+---
+
+## **Autor**
+Desarrollado por **Víctor Quimbayo**. Si tienes preguntas o sugerencias, ¡no dudes en contactarme!

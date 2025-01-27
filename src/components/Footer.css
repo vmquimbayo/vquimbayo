@@ -1,0 +1,30 @@
+/* Footer */
+.footer {
+    height: 100px; /* Altura fija del footer */
+    background-color: #111; /* Fondo oscuro */
+    color: #ccc; /* Texto gris claro */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar contenido verticalmente */
+    align-items: center; /* Centrar contenido horizontalmente */
+    width: 100%; /* Ocupa todo el ancho */
+    position: fixed;    
+    bottom: 0;
+}
+
+/* Enlaces sociales */
+.social-links {
+    margin-top: 0.5rem;
+}
+
+.social-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: red; /* Cambio de color al pasar el cursor */
+}

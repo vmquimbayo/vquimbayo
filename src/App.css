@@ -1,0 +1,38 @@
+/* Contenedor principal */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ocupa toda la altura del viewport */
+    background-color: #000; /* Fondo negro */
+    color: white; /* Texto blanco */
+}
+
+/* Navbar */
+.navbar {
+   
+    height: 60px; /* Altura fija del navbar */
+    background-color: #111; /* Fondo oscuro */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    position: fixed;
+    width: 100%;
+}
+
+/* Enlaces del navbar */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}

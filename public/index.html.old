@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Victor Manuel showcasing his projects, skills, and experience in web development.">
+    <meta name="author" content="Victor Manuel">
+    <meta name="keywords" content="Victor Manuel, Portfolio, Web Developer, Projects, Skills, Contact">
+    <title>Victor Manuel - Portfolio</title>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
+    <!-- Optional: Add external fonts or styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <!-- React will mount here -->
+    <div id="root"></div>
+
+    <!-- Footer for SEO -->
+    <footer>
+        <p>&copy; 2025 Victor Manuel. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

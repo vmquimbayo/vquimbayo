@@ -1,0 +1,38 @@
+/* Navbar */
+.navbar {
+    position: fixed; /* Fijo en la parte superior */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 60px; /* Altura del navbar */
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    display: flex;
+    justify-content: flex-start; /* Enlaces alineados a la izquierda */
+    align-items: center;
+    padding: 0 2rem;
+    border-top: 4px solid red; /* Línea roja superior */
+    width: 100%;
+}
+
+/* Enlaces del navbar */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; /* Espaciado entre los enlaces */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li a {
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    color: red; /* Cambia a rojo al pasar el cursor */
+}

@@ -1,0 +1,129 @@
+ /* Variables de colores */
+
+
+ :root {
+    --background-color: #050505; /* Negro */
+    --text-color: #ffffff; /* Blanco */
+    --accent-color: #ff073a; /* Rojo fluorescente */
+    --hover-color: rgba(255, 7, 58, 0.8); /* Rojo más tenue para hover */
+}
+
+/* General */
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 2.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* Header */
+header {
+    background-color: var(--background-color);
+    padding: 2rem 0;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+
+
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+header nav a {
+    margin-left: 2.5rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+header nav a:hover {
+    background-color: var(--hover-color);
+    color: var(--background-color);
+}
+
+/* Main */
+main {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+
+}
+
+/* Ajustes para la sección de perfil */
+.profile {
+    display: flex; /* Alinea los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: flex-start; /* Alinea todo al inicio */
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    gap: 2rem; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo para la imagen del perfil */
+.profile-image img {
+    width: 4cm; /* Ancho de la imagen */
+    height: 6cm; /* Alto de la imagen */
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+    border: 4px solid var(--accent-color); /* Borde rojo fluorescente */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5); /* Sombras suaves */
+    border-radius: 20px; /* Bordes redondeados */
+}
+
+
+main p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid var(--accent-color);
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+
+
+
+

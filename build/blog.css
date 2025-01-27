@@ -1,0 +1,129 @@
+/* Variables de colores */
+:root {
+    --background-color: #000000; /* Negro */
+    --text-color: #ffffff; /* Blanco */
+    --accent-color: #ff073a; /* Rojo fluorescente */
+    --hover-color: rgba(255, 7, 58, 0.8); /* Rojo más tenue para hover */
+}
+
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+a:hover {
+    color: var(--text-color);
+    background-color: var(--hover-color);
+}
+
+/* Header */
+header {
+    background-color: var(--background-color);
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+header nav a {
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+header nav a:hover {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+}
+
+/* Blog Section */
+.blog {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.blog-title {
+    font-size: 2rem;
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.blog-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.blog-post {
+    background-color: var(--background-color);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.blog-post h3 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.blog-post p {
+    margin: 0.5rem 0 1rem;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.blog-link {
+    font-size: 1rem;
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.blog-link:hover {
+    color: var(--text-color);
+    background-color: var(--hover-color);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid var(--accent-color);
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}

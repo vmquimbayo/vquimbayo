@@ -1,0 +1,9 @@
+html, body, #root {
+    height: 100%; /* Ocupa todo el espacio del viewport */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Fuente base */
+    background-color: #000; /* Fondo negro global */
+    color: white; /* Texto blanco */
+}
